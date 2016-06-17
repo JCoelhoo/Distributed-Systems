@@ -1,0 +1,20 @@
+<handler-chains xmlns="http://java.sun.com/xml/ns/javaee">
+    <handler-chain>
+        <handler>
+            <handler-class>example.ws.handler.LoggingHandler</handler-class>
+        </handler>
+<<<<<<< HEAD
+                <handler>
+            <handler-class>example.ws.handler.HeaderHandler</handler-class>
+        </handler>
+                <handler>
+=======
+        <handler>
+            <handler-class>example.ws.handler.HeaderHandler</handler-class>
+        </handler>
+        <handler>
+>>>>>>> 766d69dd2238fa84610cfbceb1fea49e7a1f762b
+            <handler-class>example.ws.handler.LoggingHandler</handler-class>
+        </handler>
+    </handler-chain>
+</handler-chains>

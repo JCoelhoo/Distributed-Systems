@@ -1,0 +1,8 @@
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/RequestJobIT.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/ClearJobIT.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/JobStatusIT.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/AcceptJobIT.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/AbstractIT.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/cli/TransporterClientTest.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/PingIT.java
+/home/joao/A_13-project/transporter-ws-cli_eval/src/test/java/pt/upa/transporter/ws/it/RejectJobIT.java

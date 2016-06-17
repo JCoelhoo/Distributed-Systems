@@ -1,0 +1,83 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building transporter-ws-cli 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ transporter-ws-cli ---
+[INFO] Deleting /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target
+[INFO] 
+[INFO] --- jaxws-maven-plugin:2.3:wsimport (default) @ transporter-ws-cli ---
+[INFO] Processing: file:/afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/../transporter-ws/src/main/resources/transporter.1_0.wsdl
+[INFO] jaxws:wsimport args: [-keep, -s, /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target/generated-sources/wsimport, -d, /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target/classes, -encoding, UTF-8, -Xnocompile, "file:/afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/../transporter-ws/src/main/resources/transporter.1_0.wsdl"]
+parsing WSDL...
+
+
+
+Generating code...
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ transporter-ws-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ transporter-ws-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ transporter-ws-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ transporter-ws-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ transporter-ws-cli ---
+[INFO] Surefire report directory: /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pt.upa.transporter.ws.JobStatusTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.889 sec
+Running pt.upa.transporter.ws.UDDITest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ transporter-ws-cli ---
+[INFO] Building jar: /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/transporter-ws-cli/target/transporter-ws-cli-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (default) @ transporter-ws-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pt.upa.transporter.ws.DecideJobIT
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.422 sec - in pt.upa.transporter.ws.DecideJobIT
+Running pt.upa.transporter.ws.PingIT
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 sec - in pt.upa.transporter.ws.PingIT
+Running pt.upa.transporter.ws.ListJobsIT
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.509 sec - in pt.upa.transporter.ws.ListJobsIT
+Running pt.upa.transporter.ws.RequestJobIT
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.546 sec - in pt.upa.transporter.ws.RequestJobIT
+Running pt.upa.transporter.ws.ClearJobIT
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec - in pt.upa.transporter.ws.ClearJobIT
+
+Results :
+
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (default) @ transporter-ws-cli ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.997 s
+[INFO] Finished at: 2016-04-22T11:53:52+01:00
+[INFO] Final Memory: 26M/359M
+[INFO] ------------------------------------------------------------------------

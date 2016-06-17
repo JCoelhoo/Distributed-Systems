@@ -1,0 +1,120 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building broker-ws-cli 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ broker-ws-cli ---
+[INFO] Deleting /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target
+[INFO] 
+[INFO] --- jaxws-maven-plugin:2.3:wsimport (default) @ broker-ws-cli ---
+[INFO] Processing: file:/afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/../broker-ws/src/main/resources/broker.1_0.wsdl
+[INFO] jaxws:wsimport args: [-keep, -s, /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/generated-sources/wsimport, -d, /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/classes, -encoding, UTF-8, -Xnocompile, "file:/afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/../broker-ws/src/main/resources/broker.1_0.wsdl"]
+parsing WSDL...
+
+
+
+Generating code...
+
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ broker-ws-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ broker-ws-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 29 source files to /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ broker-ws-cli ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ broker-ws-cli ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 7 source files to /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ broker-ws-cli ---
+[INFO] Surefire report directory: /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pt.upa.broker.ws.it.UDDITest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.064 sec
+Running pt.upa.broker.ws.it.BrokerServicePortTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec
+
+Results :
+
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ broker-ws-cli ---
+[INFO] Building jar: /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/broker-ws-cli-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:integration-test (default) @ broker-ws-cli ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pt.upa.broker.ws.it.ViewTransporterIT
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.958 sec <<< FAILURE! - in pt.upa.broker.ws.it.ViewTransporterIT
+jobViewFound(pt.upa.broker.ws.it.ViewTransporterIT)  Time elapsed: 0.59 sec  <<< ERROR!
+pt.upa.broker.ws.UnavailableTransportFault_Exception: Unknown Transport
+	at pt.upa.broker.ws.it.ViewTransporterIT.jobViewFound(ViewTransporterIT.java:60)
+
+Running pt.upa.broker.ws.it.PingIT
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.413 sec - in pt.upa.broker.ws.it.PingIT
+Running pt.upa.broker.ws.it.ListTransportsIT
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.065 sec <<< FAILURE! - in pt.upa.broker.ws.it.ListTransportsIT
+successList(pt.upa.broker.ws.it.ListTransportsIT)  Time elapsed: 0.637 sec  <<< ERROR!
+pt.upa.broker.ws.UnavailableTransportFault_Exception: Unknown Transport
+	at pt.upa.broker.ws.it.ListTransportsIT.successList(ListTransportsIT.java:70)
+
+Running pt.upa.broker.ws.it.ClearTransportsIT
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.553 sec <<< FAILURE! - in pt.upa.broker.ws.it.ClearTransportsIT
+clearTransports(pt.upa.broker.ws.it.ClearTransportsIT)  Time elapsed: 0.553 sec  <<< ERROR!
+pt.upa.broker.ws.UnavailableTransportFault_Exception: Unknown Transport
+	at pt.upa.broker.ws.it.ClearTransportsIT.clearTransports(ClearTransportsIT.java:57)
+
+Running pt.upa.broker.ws.it.RequestTransportIT
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.017 sec <<< FAILURE! - in pt.upa.broker.ws.it.RequestTransportIT
+validId(pt.upa.broker.ws.it.RequestTransportIT)  Time elapsed: 0.609 sec  <<< ERROR!
+pt.upa.broker.ws.UnavailableTransportFault_Exception: Unknown Transport
+	at pt.upa.broker.ws.it.RequestTransportIT.validId(RequestTransportIT.java:90)
+
+successRequest(pt.upa.broker.ws.it.RequestTransportIT)  Time elapsed: 0.567 sec  <<< ERROR!
+pt.upa.broker.ws.UnavailableTransportFault_Exception: Unknown Transport
+	at pt.upa.broker.ws.it.RequestTransportIT.successRequest(RequestTransportIT.java:72)
+
+
+Results :
+
+Tests in error: 
+  ClearTransportsIT.clearTransports:57 » UnavailableTransportFault_ Unknown Tran...
+  ListTransportsIT.successList:70 » UnavailableTransportFault_ Unknown Transport
+  RequestTransportIT.successRequest:72 » UnavailableTransportFault_ Unknown Tran...
+  RequestTransportIT.validId:90 » UnavailableTransportFault_ Unknown Transport
+  ViewTransporterIT.jobViewFound:60 » UnavailableTransportFault_ Unknown Transpo...
+
+Tests run: 10, Failures: 0, Errors: 5, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.19.1:verify (default) @ broker-ws-cli ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 13.502 s
+[INFO] Finished at: 2016-04-22T11:54:50+01:00
+[INFO] Final Memory: 26M/358M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-failsafe-plugin:2.19.1:verify (default) on project broker-ws-cli: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /afs/.ist.utl.pt/users/8/3/ist177983/A_13-project/broker-ws-cli/target/failsafe-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

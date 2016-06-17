@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: pt.upa.transporter.ws.cli.TransporterClientTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.01 sec <<< FAILURE!
+testMockUddi(pt.upa.transporter.ws.cli.TransporterClientTest)  Time elapsed: 0.519 sec  <<< ERROR!
+com.sun.xml.ws.util.UtilException: "Class: example.ws.handler.LoggingHandler could not be found"
+	at com.sun.xml.ws.handler.HandlerChainsModel.loadClass(HandlerChainsModel.java:371)
+	at com.sun.xml.ws.handler.HandlerChainsModel.getHandlersForPortInfo(HandlerChainsModel.java:345)
+	at com.sun.xml.ws.client.HandlerConfigurator$AnnotationConfigurator.configureHandlers(HandlerConfigurator.java:151)
+	at com.sun.xml.ws.client.PortInfo.createBinding(PortInfo.java:162)
+	at com.sun.xml.ws.client.SEIPortInfo.createBinding(SEIPortInfo.java:89)
+	at com.sun.xml.ws.client.WSServiceDelegate.createEndpointIFBaseProxy(WSServiceDelegate.java:817)
+	at com.sun.xml.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:451)
+	at com.sun.xml.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:419)
+	at com.sun.xml.ws.client.WSServiceDelegate.getPort(WSServiceDelegate.java:401)
+	at javax.xml.ws.Service.getPort(Service.java:119)
+	at pt.upa.transporter.ws.TransporterService.getTransporterPort(TransporterService.java:74)
+	at pt.upa.transporter.ws.cli.TransporterClient.createStub(TransporterClient.java:98)
+	at pt.upa.transporter.ws.cli.TransporterClient.<init>(TransporterClient.java:68)
+	at pt.upa.transporter.ws.cli.TransporterClientTest.testMockUddi(TransporterClientTest.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
