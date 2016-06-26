@@ -1,5 +1,10 @@
 # Projeto de Sistemas Distribuídos 2015-2016 #
 
+[EN] Broker Server receives requests from clients and contacts different transporter servers to look for the best possible offer.   
+The Broker has a primary server with a backup sending updates whenever the primary server state changes. If the primary server goes down, the backup will identify and post itself on the UDDI.  
+The communications between the Broker and Transporter are encrypted with an asymmetric key guaranteeing authenticity, integrity and non repudiation. Public keys are distributed through a Certification Authority.  
+Web Services developed both implementation-first (CA) and contract-first.
+
 Grupo de SD 13 - Campus Alameda
 
 João Coelho 77983 jskoelhoo@gmail.com 
